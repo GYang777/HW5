@@ -9,6 +9,7 @@
 
 
 games_over_50 <- function(year) {
+  utils::a <- read.csv(Seasons_Stats_NBA)
   dplyr::function_dataset_1 <- filter(Seasons_Stats_NBA, Year==year)
   data.frame(function_dataset_1)
   dplyr::filter(function_dataset_1, G>50)
