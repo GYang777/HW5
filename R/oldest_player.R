@@ -10,8 +10,7 @@
 
 oldest_player <- function(year){
   function_dataset_2 <- dplyr::filter(Seasons_Stats_NBA, Year==year)
-  utils::head(
-    dplyr::filter(function_dataset_2, Age==max(function_dataset_2[["Age"]], na.rm=TRUE)),
-    1)
+  a <- dplyr::filter(function_dataset_2, Age==max(function_dataset_2[["Age"]], na.rm=TRUE)),
+  utils::head(a,1)
 }
 
