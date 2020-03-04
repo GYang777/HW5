@@ -10,8 +10,8 @@
 
 
 correlation_numeric_var <- function(year){
-  function_dataset_3 <- keep(filter(Seasons_Stats_NBA, Year==year), is.numeric)
-  cor(function_dataset_3)
+  function_dataset_3 <- purrr::keep(filter(Seasons_Stats_NBA, Year==year), is.numeric)
+  utils::cor(function_dataset_3)
 }
 
 
