@@ -9,8 +9,8 @@
 
 
 games_over_50 <- function(year) {
-  function_dataset_1 <- dplyr::filter(Seasons_Stats_NBA, Year==year)
-  dtplyr::tbl_df(function_dataset_1)
+  dplyr::function_dataset_1 <- dplyr::filter(Seasons_Stats_NBA, Year==year)
+  data.frame(function_dataset_1)
   dplyr::filter(function_dataset_1, G>50)
 }
 
